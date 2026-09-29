@@ -1,0 +1,80 @@
+import type { ComponentMeta } from '../lib/meta'
+import type { WindowTransitionProps } from './window-transition'
+
+export const windowTransitionMeta = {
+  name: 'window-transition',
+  title: 'Window Transition',
+  description:
+    'A page transition that reveals the next page through a small rounded window growing to fill the viewport while the old page dims behind it.',
+  category: 'effects',
+  usage: { name: 'WindowTransition', extra: ['transitionKey={page}'] },
+  props: {
+    transitionKey: {
+      kind: 'string',
+      label: 'Key',
+      default: 'a',
+      playground: false,
+      description: 'Change it to play the transition',
+    },
+    duration: {
+      kind: 'number',
+      label: 'Duration',
+      default: 1100,
+      min: 200,
+      max: 3000,
+      step: 50,
+      unit: 'ms',
+    },
+    easing: {
+      kind: 'select',
+      label: 'Easing',
+      default: 'expo',
+      options: ['expo', 'ui', 'ease-in-out', 'circ'],
+    },
+    windowSize: {
+      kind: 'number',
+      label: 'Window size',
+      default: 320,
+      min: 40,
+      max: 800,
+      step: 10,
+      unit: 'px',
+      description: 'Width of the window before it expands',
+    },
+    radius: { kind: 'number', label: 'Radius', default: 16, min: 0, max: 80, step: 2, unit: 'px' },
+    dim: {
+      kind: 'number',
+      label: 'Dim',
+      default: 0.35,
+      min: 0,
+      max: 1,
+      step: 0.05,
+      description: 'How much the old page fades out',
+    },
+    shrink: {
+      kind: 'number',
+      label: 'Shrink',
+      default: 0.04,
+      min: 0,
+      max: 0.3,
+      step: 0.01,
+      description: 'How much the old page scales down',
+    },
+    zoom: {
+      kind: 'number',
+      label: 'Zoom',
+      default: 1.12,
+      min: 1,
+      max: 1.5,
+      step: 0.02,
+      description: 'Start scale of the new page inside the window',
+    },
+    origin: {
+      kind: 'select',
+      label: 'Origin',
+      default: 'bottom',
+      options: ['center', 'bottom', 'top'],
+      description: 'Where the window appears before it grows',
+    },
+  },
+} satisfies ComponentMeta<WindowTransitionProps>
