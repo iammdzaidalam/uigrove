@@ -1,0 +1,67 @@
+import type { ComponentMeta } from '../lib/meta'
+import type { CircularGalleryProps } from './circular-gallery'
+
+export const circularGalleryMeta = {
+  name: 'circular-gallery',
+  title: 'Circular Gallery',
+  description:
+    'A ring of tangential image cards that the wheel flies into and spins endlessly, with cards flipping, swelling and pushing out toward the cursor at rest.',
+  category: 'galleries',
+  usage: { extra: ['items={items}'], className: 'h-[520px] w-full' },
+  props: {
+    radius: {
+      kind: 'number',
+      label: 'Radius',
+      default: 224,
+      min: 80,
+      max: 400,
+      step: 4,
+      unit: 'px',
+    },
+    itemWidth: {
+      kind: 'number',
+      label: 'Item width',
+      default: 40,
+      min: 24,
+      max: 160,
+      step: 2,
+      unit: 'px',
+    },
+    itemHeight: {
+      kind: 'number',
+      label: 'Item height',
+      default: 45,
+      min: 24,
+      max: 200,
+      step: 2,
+      unit: 'px',
+    },
+    bend: { kind: 'number', label: 'Bend', default: 1, min: 0, max: 1, step: 0.05 },
+    count: { kind: 'number', label: 'Cards', default: 25, min: 6, max: 60, step: 1 },
+    zoom: { kind: 'number', label: 'Zoom', default: 5, min: 1, max: 8, step: 0.5 },
+    zoomOffset: {
+      kind: 'number',
+      label: 'Zoom offset',
+      default: 0,
+      min: -200,
+      max: 200,
+      step: 4,
+      unit: 'px',
+    },
+    speed: { kind: 'number', label: 'Wheel speed', default: 0.5, min: 0.1, max: 2, step: 0.05 },
+    smoothing: { kind: 'number', label: 'Smoothing', default: 1, min: 0, max: 1, step: 0.05 },
+    inertia: { kind: 'boolean', label: 'Inertia', default: true },
+    snap: { kind: 'boolean', label: 'Snap', default: false },
+    hover: { kind: 'boolean', label: 'Cursor flip', default: true },
+    autoplay: { kind: 'boolean', label: 'Autoplay', default: false },
+    autoplaySpeed: {
+      kind: 'number',
+      label: 'Autoplay speed',
+      default: 0.4,
+      min: 0.1,
+      max: 3,
+      step: 0.1,
+      unit: 'cards/s',
+    },
+  },
+} satisfies ComponentMeta<CircularGalleryProps>
