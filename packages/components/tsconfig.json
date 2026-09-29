@@ -1,0 +1,4 @@
+{
+  "extends": "@uigrove/tsconfig/react-library.json",
+  "include": ["src"]
+}
