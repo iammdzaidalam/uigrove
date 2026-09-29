@@ -1,0 +1,83 @@
+import type { ComponentMeta } from '../lib/meta'
+import type { InkBleedProps } from './ink-bleed'
+
+export const inkBleedMeta = {
+  name: 'ink-bleed',
+  title: 'Ink Bleed',
+  description:
+    'Heavy text under a gooey filter where a drop of ink trails the cursor and melts into whichever letter it touches.',
+  category: 'text',
+  usage: { always: ['text'] },
+  props: {
+    text: { kind: 'string', label: 'Text', default: 'ui grove' },
+    intensity: {
+      kind: 'number',
+      label: 'Intensity',
+      default: 50,
+      min: 0,
+      max: 100,
+      step: 1,
+      description: 'Blur spread of the goo; 0 turns the effect off',
+    },
+    fontSize: {
+      kind: 'number',
+      label: 'Font size',
+      default: 120,
+      min: 32,
+      max: 320,
+      step: 2,
+      unit: 'px',
+    },
+    fontWeight: {
+      kind: 'number',
+      label: 'Font weight',
+      default: 700,
+      min: 400,
+      max: 900,
+      step: 100,
+    },
+    letterSpacing: {
+      kind: 'number',
+      label: 'Letter spacing',
+      default: -0.03,
+      min: -0.1,
+      max: 0.2,
+      step: 0.01,
+      unit: 'em',
+    },
+    lineHeight: {
+      kind: 'number',
+      label: 'Line height',
+      default: 1,
+      min: 0.8,
+      max: 1.6,
+      step: 0.05,
+    },
+    tag: {
+      kind: 'select',
+      label: 'Tag',
+      default: 'div',
+      options: ['div', 'p', 'h1', 'h2', 'h3', 'span'],
+    },
+    color: { kind: 'color', label: 'Color', default: '#ffffff' },
+    radius: {
+      kind: 'number',
+      label: 'Ink radius',
+      default: 32,
+      min: 8,
+      max: 120,
+      step: 1,
+      unit: 'px',
+    },
+    smoothing: {
+      kind: 'number',
+      label: 'Smoothing',
+      default: 0.85,
+      min: 0,
+      max: 1,
+      step: 0.05,
+      description: 'How far the ink lags behind the cursor',
+    },
+    blobs: { kind: 'number', label: 'Blobs', default: 1, min: 1, max: 6, step: 1 },
+  },
+} satisfies ComponentMeta<InkBleedProps>
