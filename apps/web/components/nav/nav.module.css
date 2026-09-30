@@ -1,0 +1,98 @@
+.nav {
+  /* Dark page gets light capsules, light page gets dark ones */
+  --nav-capsule: #e8e8eb;
+  --nav-inset: rgb(29 29 31 / 0.12);
+  --nav-divider: rgb(29 29 31 / 0.14);
+  --nav-text: rgb(29 29 31 / 0.78);
+  --nav-text-strong: #1d1d1f;
+  /* Theme tokens flip so shared utilities read correctly on the capsules */
+  --fg: #1d1d1f;
+  --fg-rgb: 29 29 31;
+  --bg: var(--nav-capsule);
+  --color-muted: rgb(var(--fg-rgb) / 0.55);
+  --color-line: rgb(var(--fg-rgb) / 0.1);
+  --color-line-strong: rgb(var(--fg-rgb) / 0.2);
+  --color-surface: rgb(var(--fg-rgb) / 0.05);
+  --color-surface-strong: rgb(var(--fg-rgb) / 0.09);
+  color: var(--nav-text);
+  color-scheme: light;
+}
+
+:global(:root[data-theme='light']) .nav {
+  --nav-capsule: #1d1d1f;
+  --nav-inset: rgb(255 255 255 / 0.16);
+  --nav-divider: rgb(255 255 255 / 0.18);
+  --nav-text: rgb(245 245 247 / 0.85);
+  --nav-text-strong: #f5f5f7;
+  --fg: #f5f5f7;
+  --fg-rgb: 245 245 247;
+  --color-muted: rgb(245 245 247 / 0.55);
+  --color-line: rgb(245 245 247 / 0.1);
+  --color-line-strong: rgb(245 245 247 / 0.2);
+  --color-surface: rgb(245 245 247 / 0.05);
+  --color-surface-strong: rgb(245 245 247 / 0.09);
+  color-scheme: dark;
+}
+
+.capsule {
+  background: var(--nav-capsule);
+  border-radius: 9999px;
+}
+
+.inset {
+  outline: 1px solid var(--nav-inset);
+  outline-offset: -7px;
+}
+
+.divider {
+  width: 1px;
+  height: 40%;
+  background: var(--nav-divider);
+}
+
+.item {
+  color: var(--nav-text);
+  border-radius: 9999px;
+  transition: color 200ms var(--ease-ui);
+}
+
+.item:hover,
+.item[aria-expanded='true'] {
+  color: var(--nav-text-strong);
+}
+
+.item:focus-visible {
+  outline-offset: -2px;
+}
+
+.shapes {
+  position: absolute;
+  z-index: -1;
+  overflow: visible;
+  pointer-events: none;
+  fill: var(--nav-capsule);
+}
+
+.frame {
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  visibility: hidden;
+  background: var(--nav-capsule);
+}
+
+.layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layer {
+    transition: opacity 150ms var(--ease-ui);
+  }
+}
