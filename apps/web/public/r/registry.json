@@ -1,0 +1,625 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "uigrove",
+  "homepage": "https://uigrove.me",
+  "items": [
+    {
+      "name": "dot-grid",
+      "type": "registry:component",
+      "title": "Dot Grid",
+      "description": "A background grid of dots that pushes away from the cursor and springs back.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/dot-grid.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/dot-grid.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "gooey-dots",
+      "type": "registry:component",
+      "title": "Gooey Dots",
+      "description": "Drifting dots that merge into one liquid shape when they come close.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/gooey-dots.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/gooey-dots.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dot-matrix-text",
+      "type": "registry:component",
+      "title": "Dot Matrix Text",
+      "description": "Text rendered as a dot matrix that assembles from scattered dots as it scrolls into view.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/dot-matrix-text.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/dot-matrix-text.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "grain-gradient",
+      "type": "registry:component",
+      "title": "Grain Gradient",
+      "description": "A WebGL surface with a curved, diffused edge between three colors, film grain and a slow breathing motion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/grain-gradient.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/grain-gradient.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dithered-logo",
+      "type": "registry:component",
+      "title": "Dithered Logo",
+      "description": "Any image or SVG turned into a dithered particle field that repels the cursor and ripples on click.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/dithered-logo.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/dithered-logo.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "ascii-effect",
+      "type": "registry:component",
+      "title": "ASCII Effect",
+      "description": "An image or video rendered as live ASCII characters with flow, glitch and cursor ripple modes.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/ascii-effect.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/ascii-effect.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "wheel-carousel",
+      "type": "registry:component",
+      "title": "Wheel Carousel",
+      "description": "A rotating wheel of labels on a curve with a photo that crossfades to the active item.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/wheel-carousel.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/wheel-carousel.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "scroll-surf",
+      "type": "registry:component",
+      "title": "Scroll Surf",
+      "description": "A scroll-driven gallery where tilted cards surf toward the viewer along a perspective track.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/scroll-surf.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/scroll-surf.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "expand-on-hover",
+      "type": "registry:component",
+      "title": "Expand on Hover",
+      "description": "A row of tall pill-shaped image strips where the hovered strip widens and the rest shrink.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/expand-on-hover.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/expand-on-hover.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "expand-on-hover-vertical",
+      "type": "registry:component",
+      "title": "Expand on Hover Vertical",
+      "description": "A stack of pill-shaped image rows where the hovered row grows tall and the rest flatten.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/expand-on-hover-vertical.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/expand-on-hover-vertical.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "spine-gallery",
+      "type": "registry:component",
+      "title": "Spine Gallery",
+      "description": "Thin ruled columns with vertical names that open wide on hover to reveal a photo and a year.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/spine-gallery.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/spine-gallery.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "scene-reveal",
+      "type": "registry:component",
+      "title": "Scene Reveal",
+      "description": "A scroll-driven hand-off where the hero pushes in and the next scene breaks through a growing window.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/scene-reveal.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/scene-reveal.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "image-reveal",
+      "type": "registry:component",
+      "title": "Image Reveal",
+      "description": "A sticky stage where each image wipes up from the bottom as you scroll, then settles back.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/image-reveal.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/image-reveal.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "devouring-sign-in",
+      "type": "registry:component",
+      "title": "Devouring Sign In",
+      "description": "A large email field whose text is eaten into dust from the right when you submit.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/devouring-sign-in.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/devouring-sign-in.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "gooey-effect",
+      "type": "registry:component",
+      "title": "Gooey Effect",
+      "description": "Draggable shapes that melt into each other when they touch. Wrap any elements in GooeyEffect.Item; the wrapper and its parent must have no background colour so the filter only sees the shapes.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/gooey-effect.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/gooey-effect.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "vector-wordmark",
+      "type": "registry:component",
+      "title": "Vector Wordmark",
+      "description": "A heavy wordmark that turns into a dotted vector outline with editor handles and coordinates around the cursor.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/vector-wordmark.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/vector-wordmark.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "circular-gallery",
+      "type": "registry:component",
+      "title": "Circular Gallery",
+      "description": "A ring of tangential image cards that the wheel flies into and spins endlessly, with cards flipping, swelling and pushing out toward the cursor at rest.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/circular-gallery.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/circular-gallery.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "lens-carousel",
+      "type": "registry:component",
+      "title": "Lens Carousel",
+      "description": "A looping row of photo cards whose edges pass under two slabs of bending glass with colour fringing.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/lens-carousel.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/lens-carousel.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "film-grain",
+      "type": "registry:component",
+      "title": "Film Grain",
+      "description": "An animated film grain overlay for any section, drawn on the GPU and blended with what sits beneath it.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/film-grain.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/film-grain.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "window-transition",
+      "type": "registry:component",
+      "title": "Window Transition",
+      "description": "A page transition that reveals the next page through a small rounded window growing to fill the viewport while the old page dims behind it.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/window-transition.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/window-transition.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "orbit-tiles",
+      "type": "registry:component",
+      "title": "Orbit Tiles",
+      "description": "Tiles drifting along a tilted elliptical orbit in perspective, sharp and large in front, soft and small behind, draggable to spin.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/orbit-tiles.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/orbit-tiles.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dot-globe",
+      "type": "registry:component",
+      "title": "Dot Globe",
+      "description": "A dotted globe drawn on canvas with approximate continents, auto rotation, drag with inertia and hoverable markers.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/dot-globe.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/dot-globe.engine.ts",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/land.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "liquid-smoke",
+      "type": "registry:component",
+      "title": "Liquid Smoke",
+      "description": "Slow plumes of smoke rising from the bottom of a section, drawn with warped noise on the GPU.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/liquid-smoke.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/liquid-smoke.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "goo-carve-button",
+      "type": "registry:component",
+      "title": "Goo Carve Button",
+      "description": "A pill button where a liquid blob carves into the surface on hover, chases the cursor, stretches into a teardrop with speed and reveals the blob colour underneath.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/goo-carve-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/goo-carve-button.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "ink-bleed",
+      "type": "registry:component",
+      "title": "Ink Bleed",
+      "description": "Heavy text under a gooey filter where a drop of ink trails the cursor and melts into whichever letter it touches.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/ink-bleed.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/ink-bleed.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dust-transition",
+      "type": "registry:component",
+      "title": "Dust Transition",
+      "description": "A scroll-driven hand-off where the hero dollies in, a flare bursts at the focus and the next scene eats through it as glowing dust.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/dust-transition.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/dust-transition.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "pill-nav",
+      "type": "registry:component",
+      "title": "Pill Nav",
+      "description": "A floating pill navigation bar that unfolds into a full-height menu and opens a command search.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/pill-nav.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/pill-nav.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dynamic-island",
+      "type": "registry:component",
+      "title": "Dynamic Island",
+      "description": "A black pill that springs between a compact idle shape and richer live activity states.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/dynamic-island.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/dynamic-island.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "image-wheel-3d",
+      "type": "registry:component",
+      "title": "Image Wheel 3D",
+      "description": "A tilted ring of image cards standing on edge like a rolodex, seen from above in perspective. The wheel turns with the mouse wheel or spins on its own, cards lift on hover and the camera leans toward the cursor.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/image-wheel-3d.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/image-wheel-3d.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "morphing-text",
+      "type": "registry:component",
+      "title": "Morphing Text",
+      "description": "Words that melt into one another: each fades through a blur while an alpha threshold turns the overlap into gooey bridges.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/morphing-text.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/morphing-text.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "text-tunnel",
+      "type": "registry:component",
+      "title": "Text Tunnel",
+      "description": "Rows of text scroll through a WebGL tunnel that folds and stretches them toward the edges, with bloom and a spectral fringe.",
+      "dependencies": [],
+      "registryDependencies": [
+        "https://uigrove.me/r/dot-canvas.json"
+      ],
+      "files": [
+        {
+          "path": "components/uigrove/text-tunnel.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/text-tunnel.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "split-word-loader",
+      "type": "registry:component",
+      "title": "Split Word Loader",
+      "description": "A page loader whose word rises letter by letter, splits open around a window of cycling images, then grows the last image into the page.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/uigrove/split-word-loader.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "components/uigrove/split-word-loader.engine.ts",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "dot-canvas",
+      "type": "registry:hook",
+      "title": "Dot Canvas",
+      "description": "Canvas 2D hook that sizes for high-DPI, pauses offscreen, and tracks the pointer.",
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "hooks/use-dot-canvas.ts",
+          "type": "registry:hook"
+        }
+      ]
+    }
+  ]
+}
