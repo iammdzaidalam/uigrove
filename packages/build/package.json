@@ -1,0 +1,25 @@
+{
+  "name": "@uigrove/build",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Generates distribution variants and the shadcn registry.",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "scripts": {
+    "generate": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@tailwindcss/node": "^4.3.3",
+    "@types/node": "^24.0.0",
+    "@uigrove/components": "workspace:*",
+    "@uigrove/tsconfig": "workspace:*",
+    "prettier": "^3.9.9",
+    "tailwindcss": "^4.3.3",
+    "ts-morph": "^28.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.2"
+  }
+}
